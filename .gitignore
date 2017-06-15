@@ -110,7 +110,8 @@ jspm_packages
 *.pot
 *.pyc
 __pycache__/
-files
 db.sqlite3
+/files/
 
 # End of https://www.gitignore.io/api/pycharm,node,django
+

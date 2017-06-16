@@ -1,0 +1,185 @@
+/*STATS*/
+.statistics {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 15px;
+    align-items: center;
+}
+
+.statistics-row {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    width: 100%;
+    justify-content: center;
+}
+
+.statistics .statistic {
+    padding: 5px 20px;
+    text-align: center;
+    color: white;
+}
+
+.statistic .label {
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 17px;
+    padding-bottom: 6px;
+    font-weight: 300;
+}
+
+.statistic .value {
+    font-size: 35px;
+    padding: 3px 0;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    font-weight: bold;
+}
+
+.statistic .value i.icon {
+    font-size: 27px;
+    margin: 0;
+    padding: 0px 7px;
+    align-self: center;
+}
+
+.timeline-row {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 100%;
+}
+
+.timeline-row .timeline {
+    display: flex;
+}
+
+.timeline .progress {
+    margin: 0 10px;
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 3px;
+    position: relative;
+}
+
+.timeline-row .label {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.timeline .progress span.fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background: white;
+    transition: .2s ease;
+}
+
+/*GAMES*/
+.game-item {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.game-item .team {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-item .title {
+    font-size: 21px;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 300;
+}
+
+.game-item .info {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.game-item .score {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.game-item .team-score {
+    position: relative;
+    display: flex;
+    font-size: 36px;
+    padding: 0px 10px;
+}
+
+.game-item .datetime {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.game-item sup.rate {
+    font-size: 12px;
+    position: relative;
+    top: -14px;
+    padding: 5px;
+    color: #8a8a8a;
+}
+
+.game-item .flag {
+    padding: 0 4px;
+}
+
+.game-item span.cat-choice {
+    width: 20px;
+    height: 100%;
+    position: absolute;
+    top: -3px;
+    fill: #a8a8a8;
+}
+
+.team-a span.cat-choice {
+    left: -20px;
+}
+
+.team-b span.cat-choice {
+    left: 40px;
+}
+
+.game-item .team-score.win > * {
+    color: green;
+    fill: green !important;
+}
+
+.game-item .team-score.loose > * {
+    color: darkred;
+    fill: darkred !important;
+}
+
+.game-item span.money {
+    position: absolute;
+    top: 0;
+    font-size: 12px;
+}
+
+.team-a span.money {
+    left: -70px;
+}
+
+.team-b span.money {
+    left: 70px;
+}

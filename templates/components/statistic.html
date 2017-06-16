@@ -1,0 +1,26 @@
+<div class="statistics">
+
+    <div class="statistics-row">
+        <div class="statistic">
+            <div class="label">Встреч<br>сыграно</div>
+            <div class="value"><i class="icon fa fa-futbol-o"></i>{{ finishedGamesNum }}</div>
+        </div>
+        <div class="statistic">
+            <div class="label">Денег<br>заработано</div>
+            <div class="value">{{ totalWinSum }}<i class="icon fa fa-rub"></i></div>
+        </div>
+    </div>
+
+    <div class="statistics-row">
+        <div class="timeline-row">
+            <div class="label">Успешность котика</div>
+            <div class="timeline">
+                <div class="win">{{ winRate }}%</div>
+                <div class="progress"><span class="fill" style="width: {{ winRate }}%"></span></div>
+                <div class="loose">{{ looseRate }}%</div>
+            </div>
+        </div>
+    </div>
+
+</div>
+

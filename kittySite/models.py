@@ -29,5 +29,32 @@ class Game(models.Model):
     link = models.URLField('Bet link', default = '', blank = True)
     finished = models.BooleanField(blank=True, default=False)
 
+
+    def getWinSum(self):
+        if self.scoreA > self.scoreB and self.catChoice == 'A' :
+            return (self.betSum * self.kA) - self.betSum
+        elif self.scoreB > self.scoreA and self.catChoice == 'B':
+            return (self.betSum * self.kB) - self.betSum
+        return -self.betSum
+
+
+    def catWasRight(self):
+        if self.scoreA > self.scoreB and self.catChoice == 'A':
+            return True
+        elif self.scoreB > self.scoreA and self.catChoice == 'B':
+            return True
+        return False
+
+    def catWasRightAboutA(self):
+        if self.scoreA > self.scoreB and self.catChoice == 'A':
+            return True
+        return False
+
+    def catWasRightAboutB(self):
+        if self.scoreB > self.scoreA and self.catChoice == 'B':
+            return True
+        return False
+
+
     def __str__(self):
         return self.teamA.title + ' - ' + self.teamB.title

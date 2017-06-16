@@ -1567,7 +1567,7 @@
 
 	body, input, select, textarea {
 		color: #a2a2a2;
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-family: "Roboto", Helvetica, sans-serif;
 		font-size: 16pt;
 		font-weight: 400;
 		line-height: 1.75em;
@@ -2481,7 +2481,7 @@
 		justify-content: space-between;
 		background-color: #1f1815;
 		background-attachment: scroll,								fixed;
-		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+		background-image: url("images/overlay.png"), url("../images/bg.jpg");
 		background-position: top left,							top left;
 		background-repeat: repeat,								no-repeat;
 		background-size: auto,								auto 100%;
@@ -2493,6 +2493,7 @@
 		text-align: right;
 		top: 0;
 		width: 35%;
+		padding-bottom: 20px;
 	}
 
 		#header > * {
@@ -2524,6 +2525,7 @@
 			font-size: 1.75em;
 			line-height: 1.25em;
 			margin: 0;
+			text-align: center;
 		}
 
 		#header .image.avatar {
@@ -2532,6 +2534,10 @@
 		}
 
 /* Footer */
+
+	footer#footer {
+		text-align: center;
+	}
 
 	#footer .icons {
 		margin: 1em 0 0 0;

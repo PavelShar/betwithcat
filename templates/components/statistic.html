@@ -22,5 +22,16 @@
         </div>
     </div>
 
+
+    <div class="links">
+        {% if finishedGamesNum > 0 %}
+
+            {% if totalWinSum > 0 %}Даже у кота получается выигрывать на ставках!<br><a href='https://www.leon.ru/?wm=62885904' target="_blank">Попробуй и ты!</a>{% endif %}
+            {% if totalWinSum <= 0 %}У кота не лучшая пора,<br>но <a href='https://www.leon.ru/?wm=62885904' target="_blank">у вас может выйти лучше!</a>{% endif %}
+
+        {% endif %}
+    </div>
+
+
 </div>
 

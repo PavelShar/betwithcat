@@ -7,6 +7,15 @@
     align-items: center;
 }
 
+.statistics .links {
+    text-align: center;
+    padding-top: 25px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.4;
+
+}
+
 .statistics-row {
     display: flex;
     align-items: center;
